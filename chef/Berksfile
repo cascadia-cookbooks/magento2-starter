@@ -5,4 +5,5 @@ cookbook 'cas_magento',
     git: 'https://github.com/cascadia-cookbooks/magento.git'
 
 cookbook 'packages', '~> 1.0'
+cookbook 'selinux', '~> 1.0'
 cookbook 'yum-epel', '~> 2.1'
