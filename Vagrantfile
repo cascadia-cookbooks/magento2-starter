@@ -72,7 +72,7 @@ Vagrant.configure('2') do |config|
 
         # Chef provisioner
         web.vm.provision 'chef_zero' do |chef|
-            chef.isntall = true
+            chef.install = true
             chef.version = 'latest'
             chef.cookbooks_path = 'chef/cookbooks'
             chef.data_bags_path = 'chef/data_bags'
