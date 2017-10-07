@@ -54,7 +54,7 @@ Vagrant.configure('2') do |config|
             chef.nodes_path = 'chef/nodes'
             chef.roles_path = 'chef/roles'
 
-            chef.add_role 'data'
+            chef.add_role 'base'
         end
     end
     #--- End Database VM configuration ---#
@@ -83,7 +83,7 @@ Vagrant.configure('2') do |config|
             chef.nodes_path = 'chef/nodes'
             chef.roles_path = 'chef/roles'
 
-            chef.add_role 'web'
+            chef.add_role 'base'
         end
     end
     #--- End Web VM configuration ---#
