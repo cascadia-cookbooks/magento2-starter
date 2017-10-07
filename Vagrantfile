@@ -14,6 +14,7 @@ Vagrant.configure('2') do |config|
 
     # Vagrant plugin 'berkshelf'
     if Vagrant.has_plugin?('berkshelf')
+        config.berkshelf.enabled = true
         config.berkshelf.berksfile_path = './chef/Berksfile'
     else
         abort('Please install Vagrant plugin "vagrant-berkshelf"')
