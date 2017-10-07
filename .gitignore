@@ -1,2 +1,3 @@
 .vagrant/
 chef/Berksfile.lock
+chef/nodes/*.json
