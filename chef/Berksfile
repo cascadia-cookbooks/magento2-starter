@@ -6,4 +6,5 @@ cookbook 'cas_magento',
 
 cookbook 'packages', '~> 1.0'
 cookbook 'selinux', '~> 1.0'
+cookbook 'user', '~> 0.7'
 cookbook 'yum-epel', '~> 2.1'
