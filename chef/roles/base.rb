@@ -4,6 +4,7 @@ description 'Basic CentOS system and package configuration'
 run_list(
     'recipe[selinux::permissive]',
     'recipe[user::data_bag]',
+    'recipe[sudo]',
     'recipe[yum-epel]',
     'recipe[packages]'
 )
