@@ -1,0 +1,6 @@
+{
+    "id" : "magento",
+    "comment" : "Magento 2 user",
+    "groups" : ["www-data"],
+    "ssh_keys" : ["example key"]
+}
