@@ -14,6 +14,22 @@ default_attributes(
     'packages-cookbook': %w(
         htop
     ),
+    # Supermarket cookbook 'sudo'
+    authorization: {
+        sudo: {
+            users: ['vagrant'],
+            passwordless: true,
+            custom_commands: {
+                groups: [{
+                    group: 'magento',
+                    passwordless: true,
+                    command_list: [
+                        '/bin/su magento'
+                    ]
+                }]
+            }
+        }
+    },
     # Supermarket cookbook 'user'
     users: %w(
         magento
