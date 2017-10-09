@@ -12,5 +12,9 @@ default_attributes(
     # Supermarket cookbook 'packages'
     'packages-cookbook': %w(
         htop
+    ),
+    # Supermarket cookbook 'user'
+    users: %w(
+        magento
     )
 )
