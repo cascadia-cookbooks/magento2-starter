@@ -70,6 +70,7 @@ Vagrant.configure('2') do |config|
 
         # Disable default shared folder
         web.vm.synced_folder ".", "/vagrant", disabled: true
+        web.vm.synced_folder 'src/', '/src', type: 'virtualbox'
 
         if Vagrant.has_plugin?('vagrant-hostmanager')
             web.hostmanager.aliases = %w(
