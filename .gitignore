@@ -1,3 +1,4 @@
 .vagrant/
 chef/Berksfile.lock
 chef/nodes/*.json
+chef/.chef/secret_key
