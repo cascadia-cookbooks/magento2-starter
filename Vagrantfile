@@ -36,6 +36,9 @@ Vagrant.configure('2') do |config|
         data.vm.hostname = 'db.cascadia.local'
         data.vm.network 'private_network', ip: '10.17.0.10'
 
+        # Disable default shared folder
+        data.vm.synced_folder ".", "/vagrant", disabled: true
+
         if Vagrant.has_plugin?('vagrant-hostmanager')
             data.hostmanager.aliases = %w(
                 cache.cascadia.local
@@ -64,6 +67,9 @@ Vagrant.configure('2') do |config|
     config.vm.define 'web' do |web|
         web.vm.hostname = 'web.cascadia.local'
         web.vm.network 'private_network', ip: '10.17.0.20'
+
+        # Disable default shared folder
+        web.vm.synced_folder ".", "/vagrant", disabled: true
 
         if Vagrant.has_plugin?('vagrant-hostmanager')
             web.hostmanager.aliases = %w(
