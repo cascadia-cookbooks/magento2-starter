@@ -72,6 +72,8 @@ Vagrant.configure('2') do |config|
         web.vm.synced_folder ".", "/vagrant", disabled: true
         web.vm.synced_folder 'src/', '/src', type: 'virtualbox'
 
+        #web.vm.synced_folder 'magento/', '/magento', type: 'nfs_guest'
+
         if Vagrant.has_plugin?('vagrant-hostmanager')
             web.hostmanager.aliases = %w(
                 shop.cascadia.local
