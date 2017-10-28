@@ -94,6 +94,7 @@ Vagrant.configure('2') do |config|
             chef.roles_path = 'chef/roles'
 
             chef.add_role 'base'
+            chef.add_role 'magento'
         end
     end
     #--- End Web VM configuration ---#
