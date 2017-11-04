@@ -5,6 +5,7 @@ run_list(
     'recipe[selinux::permissive]',
     'recipe[user::data_bag]',
     'recipe[sudo]',
+    'recipe[cas_cron]',
     'recipe[yum-epel]',
     'recipe[packages]'
 )
